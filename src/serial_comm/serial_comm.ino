@@ -1,5 +1,4 @@
 uint8_t input_pin = 2;
-char rec = 0;
 
 void setup() {
 
@@ -14,17 +13,7 @@ int val = digitalRead(input_pin);
 
 if(val == LOW) {
 
-    Serial.println("test");
+    Serial.println('a');
 
-    } else {
-    
-    if(Serial.available() > 0) {
-        
-        rec = Serial.read();
-
-        Serial.print("received:");
-        Serial.print(rec);
-
-        }
-    }
+}
 }
